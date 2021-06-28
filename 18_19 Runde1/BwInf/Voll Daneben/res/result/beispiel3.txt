@@ -1,0 +1,17 @@
+---ERGEBNIS---
+Glückszahlen: 100
+Einzahlung: 2500$
+Al's Zahlen:
+66
+156
+256
+362
+459
+551
+662
+750
+860
+959
+Auszahlung: 2396$
+Saldo: 104$
+Al Capone: Gotcha!

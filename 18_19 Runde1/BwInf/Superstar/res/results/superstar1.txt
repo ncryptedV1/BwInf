@@ -1,0 +1,18 @@
+---INFOS---
+neuer User: Selena
+neuer User: Justin
+neuer User: Hailey
+Selena folgt Hailey
+Justin folgt Hailey
+---ALGORITHMUS---
+Selena->Justin? false
+Selena->Hailey? true
+Justin->Selena? false
+Justin->Hailey? true
+Hailey->Selena? false
+Hailey->Justin? false
+---ERGEBNIS---
+User: 3
+Superstar: Hailey
+Maximale Kosten: 6
+Anfragen/Kosten: 6

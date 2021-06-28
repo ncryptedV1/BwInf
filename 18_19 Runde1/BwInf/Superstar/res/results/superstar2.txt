@@ -1,0 +1,32 @@
+---INFOS---
+neuer User: Turing
+neuer User: Hoare
+neuer User: Dijkstra
+neuer User: Knuth
+neuer User: Codd
+Turing folgt Hoare
+Turing folgt Dijkstra
+Hoare folgt Turing
+Hoare folgt Dijkstra
+Hoare folgt Codd
+Knuth folgt Turing
+Knuth folgt Dijkstra
+Codd folgt Turing
+Codd folgt Dijkstra
+Codd folgt Knuth
+---ALGORITHMUS---
+Turing->Hoare? true
+Hoare->Turing? true
+Dijkstra->Turing? false
+Dijkstra->Hoare? false
+Dijkstra->Knuth? false
+Dijkstra->Codd? false
+Turing->Dijkstra? true
+Hoare->Dijkstra? true
+Knuth->Dijkstra? true
+Codd->Dijkstra? true
+---ERGEBNIS---
+User: 5
+Superstar: Dijkstra
+Maximale Kosten: 20
+Anfragen/Kosten: 10

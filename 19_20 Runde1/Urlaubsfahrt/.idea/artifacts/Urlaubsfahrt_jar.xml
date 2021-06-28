@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Urlaubsfahrt:jar">
+    <output-path>D:/BwInf/19_20 Runde1</output-path>
+    <root id="archive" name="Urlaubsfahrt.jar">
+      <element id="module-output" name="Urlaubsfahrt" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,31 @@
+---INFOS---
+neuer User: Edsger
+neuer User: Jitse
+neuer User: Jorrit
+neuer User: Peter
+neuer User: Pia
+neuer User: Rineke
+neuer User: Rinus
+neuer User: Sjoukje
+Edsger folgt Jitse
+Jitse folgt Edsger
+Jorrit folgt Edsger
+Peter folgt Edsger
+Pia folgt Edsger
+Rineke folgt Edsger
+Rinus folgt Edsger
+Sjoukje folgt Edsger
+---ALGORITHMUS---
+Edsger->Jitse? true
+Jitse->Edsger? true
+Jorrit->Edsger? true
+Peter->Edsger? true
+Pia->Edsger? true
+Rineke->Edsger? true
+Rinus->Edsger? true
+Sjoukje->Edsger? true
+---ERGEBNIS---
+User: 8
+Superstar: /
+Maximale Kosten: 56
+Anfragen/Kosten: 8

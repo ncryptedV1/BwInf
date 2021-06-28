@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Merker:jar">
+    <output-path>D:/BwInf/19_20 Runde1</output-path>
+    <root id="archive" name="Merker.jar">
+      <element id="module-output" name="Merker" />
+    </root>
+  </artifact>
+</component>
