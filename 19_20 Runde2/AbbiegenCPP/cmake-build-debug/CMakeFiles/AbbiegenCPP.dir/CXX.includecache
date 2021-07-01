@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/oliver.schirmer@sap.com/Desktop/BwInf/19_20 Runde2/AbbiegenCPP/dfs.cpp
+dfs.h
+C:/Users/oliver.schirmer@sap.com/Desktop/BwInf/19_20 Runde2/AbbiegenCPP/dfs.h
+
+C:/Users/oliver.schirmer@sap.com/Desktop/BwInf/19_20 Runde2/AbbiegenCPP/dfs.h
+
