@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <stack>
+#include <limits>
 #include "IntPoint.h"
 
 using std::vector;
@@ -16,6 +17,8 @@ vector<bool> inStack;
 int minTurns;
 double minTurnDist;
 stack<int> turnPath;
+
+const static int MAX_INT = std::numeric_limits<int>::max();
 
 void setup(vector<vector<tuple<int, double>>> &graph);
 

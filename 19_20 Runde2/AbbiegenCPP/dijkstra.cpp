@@ -1,5 +1,4 @@
 #include "dijkstra.h"
-#include <limits>
 #include <queue>
 #include <algorithm>
 
@@ -8,13 +7,12 @@ using std::make_pair;
 
 typedef pair<double, int> diPair;
 
-const int MAX_INT = std::numeric_limits<int>::max();
-
 pair<double, vector<int>>
 dijkstra(vector<IntPoint> &nodes, vector<vector<pair<int, double>>> &graph, int start, int end) {
     int n = nodes.size();
     vector<double> dist(n, MAX_INT);
     vector<int> pred(n, -1);
+    dist[start] = 0;
 
     priority_queue<diPair, vector<diPair>, std::greater<diPair>> pq;
     pq.push(make_pair(0, start));

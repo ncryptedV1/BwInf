@@ -1,3 +1,0 @@
-C:/Users/oliver.schirmer@sap.com/Desktop/BwInf/19_20 Runde2/AbbiegenCPP/cmake-build-debug/CMakeFiles/AbbiegenCPP.dir
-C:/Users/oliver.schirmer@sap.com/Desktop/BwInf/19_20 Runde2/AbbiegenCPP/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/oliver.schirmer@sap.com/Desktop/BwInf/19_20 Runde2/AbbiegenCPP/cmake-build-debug/CMakeFiles/rebuild_cache.dir

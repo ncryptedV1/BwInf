@@ -5,7 +5,7 @@ void setup(vector<vector<pair<int, double>>> &graph) {
     angles = vector<vector<double>>(n, vector<double>(n));
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            angles[i][j] = 90;
+            angles[i][j] = MAX_INT;
         }
     }
     path = stack<int>();
@@ -33,7 +33,7 @@ dfs(vector<IntPoint> &nodes, vector<vector<pair<int, double>>> &graph, int maxPa
             continue;
         }
         double newAngle = angles[curNode][nextNode];
-        if (newAngle == 90) {
+        if (newAngle == MAX_INT) {
             angles[curNode][nextNode] = nodes[curNode].getAngleTo(nodes[nextNode]);
             newAngle = angles[curNode][nextNode];
         }

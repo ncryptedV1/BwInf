@@ -21,7 +21,7 @@ public:
 
     operator std::string() const;
 
-    double getAngleTo(IntPoint point2);
+    double getAngleTo(IntPoint &point2);
 };
 
 
