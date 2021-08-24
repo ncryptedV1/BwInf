@@ -1,6 +1,9 @@
 #include "dfs.h"
 
-void setup(vector<vector<pair<int, double>>> &graph) {
+DFS::DFS(vector<IntPoint> &nodes, vector<vector<pair<int, double>>> &graph, int maxPathLen, int startNode,
+         int targetNode) : nodes(nodes), graph(graph), maxPathLen(maxPathLen), startNode(startNode),
+                           targetNode(targetNode) {
+    // init implementation variables
     int n = graph.size();
     angles = vector<vector<double>>(n, vector<double>(n));
     for (int i = 0; i < n; i++) {
@@ -10,12 +13,19 @@ void setup(vector<vector<pair<int, double>>> &graph) {
     }
     path = stack<int>();
     inStack = vector<bool>(n);
+
+    // init result holder variables
+    minTurns = MAX_INT;
+    minTurnDist = MAX_DOUBLE;
+    turnPath = stack<int>();
 }
 
-void
-dfs(vector<IntPoint> &nodes, vector<vector<pair<int, double>>> &graph, int maxPathLen, int curNode, int targetNode,
-    int turns,
-    double wayLen, double lastAngle) {
+dfsResultTuple DFS::dfs() {
+    dfsImpl(startNode, 0, 0, MAX_INT);
+    return make_tuple(minTurns, minTurnDist, turnPath);
+}
+
+void DFS::dfsImpl(int curNode, int turns, double wayLen, double lastAngle) {
     path.push(curNode);
     inStack[curNode] = true;
     if (curNode == targetNode) {
@@ -43,7 +53,7 @@ dfs(vector<IntPoint> &nodes, vector<vector<pair<int, double>>> &graph, int maxPa
             (newTurns == minTurns && newWayLen >= minTurnDist)) {
             continue;
         }
-        dfs(nodes, graph, maxPathLen, nextNode, targetNode, newTurns, wayLen + edgeLen, newAngle);
+        dfsImpl(nextNode, newTurns, wayLen + edgeLen, newAngle);
     }
     path.pop();
     inStack[curNode] = false;

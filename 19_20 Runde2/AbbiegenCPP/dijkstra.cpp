@@ -8,7 +8,7 @@ using std::make_pair;
 typedef pair<double, int> diPair;
 
 pair<double, vector<int>>
-dijkstra(vector<IntPoint> &nodes, vector<vector<pair<int, double>>> &graph, int start, int end) {
+Dijkstra::dijkstra(vector<IntPoint> &nodes, vector<vector<pair<int, double>>> &graph, int start, int end) {
     int n = nodes.size();
     vector<double> dist(n, MAX_INT);
     vector<int> pred(n, -1);
@@ -36,7 +36,7 @@ dijkstra(vector<IntPoint> &nodes, vector<vector<pair<int, double>>> &graph, int 
     return make_pair(dist[end], path);
 }
 
-vector<int> constructPath(vector<int> &pred, int start, int end) {
+vector<int> Dijkstra::constructPath(vector<int> &pred, int start, int end) {
     vector<int> path;
     int cur = end;
     while (cur != start) {

@@ -5,8 +5,11 @@
 #ifndef ABBIEGENCPP_INTPOINT_H
 #define ABBIEGENCPP_INTPOINT_H
 
-
 #include <string>
+#include <limits>
+
+const static int MAX_INT = std::numeric_limits<int>::max();
+const static double MAX_DOUBLE = std::numeric_limits<double>::max();
 
 class IntPoint {
     int x;
