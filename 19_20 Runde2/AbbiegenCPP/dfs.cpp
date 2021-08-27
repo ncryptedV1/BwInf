@@ -36,9 +36,9 @@ void DFS::dfsImpl(int curNode, int turns, double wayLen, double lastAngle) {
         inStack[curNode] = false;
         return;
     }
-    for (pair<int, double> edge : graph[curNode]) {
-        int nextNode = edge.first;
-        double edgeLen = edge.second;
+    for (auto [nextNode, edgeLen] : graph[curNode]) {
+//        int nextNode = edge.first;
+//        double edgeLen = edge.second;
         if (inStack[nextNode]) {
             continue;
         }

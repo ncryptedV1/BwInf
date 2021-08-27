@@ -8,8 +8,8 @@
 #include <string>
 #include <limits>
 
-const static int MAX_INT = std::numeric_limits<int>::max();
-const static double MAX_DOUBLE = std::numeric_limits<double>::max();
+constexpr static int MAX_INT = std::numeric_limits<int>::max();
+constexpr static double MAX_DOUBLE = std::numeric_limits<double>::max();
 
 class IntPoint {
     int x;
@@ -18,13 +18,13 @@ class IntPoint {
 public:
     IntPoint(int x, int y);
 
-    int getX();
+    int getX() const;
 
-    int getY();
+    int getY() const;
 
     operator std::string() const;
 
-    double getAngleTo(IntPoint &point2);
+    double getAngleTo(const IntPoint &point2) const;
 };
 
 
